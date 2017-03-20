@@ -1,0 +1,48 @@
+package:
+  name: biolite
+  version: 1.0.0
+
+source:
+  url: https://bitbucket.org/caseywdunn/biolite/get/agalma-issue-227.zip
+  #md5: c52d927d695080aaacdb231dbd1d8575
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+  run:
+    - python
+    - setuptools
+    - biolite-tools ==0.4.0
+    - biopython ==1.68
+    - dendropy ==4.2.0
+    - docutils ==0.13.1
+    - ete3 ==3.0.0b35
+    - lxml ==3.7.2
+    - matplotlib ==2.0.0
+    - networkx ==1.11
+    - numpy ==1.11.3
+    - pandas ==0.19.2
+    - wget ==2.2
+    - sra-tools ==2.8.0
+
+test:
+  imports:
+    - biolite
+    - biolite.workflows
+  commands:
+    - bl-catalog -h
+    - bl-diagnostics -h
+    - bl-examl -h
+    - bl-examl-bootstraps -h
+    - bl-plot-tree
+    - bl-sra -h
+    - bl-treepruning
+  requires:
+    - pytest
+
+about:
+  home: https://bitbucket.org/caseywdunn/biolite
+  license: GPLv3
+  summary: A lightweight bioinformatics framework with automated tracking of diagnostics and provenance.

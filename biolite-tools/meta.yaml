@@ -1,0 +1,35 @@
+package:
+  name: biolite-tools
+  version: 0.4.0
+
+source:
+  fn: biolite-tools-0.4.0.tar.gz
+  url: https://bitbucket.org/caseywdunn/biolite/downloads/biolite-tools-0.4.0.tar.gz
+  md5: d74868a9317be43c670483f7a0c93cf4
+
+requirements:
+  build:
+    - zlib
+    - gcc
+  run:
+    - zlib
+    - libgcc
+ 
+test:
+  commands:
+    - bl-coverage -h
+    - bl-exclude -h
+    - bl-filter-illumina -h
+    - bl-fasta2fastq -h
+    - bl-fastq2fasta -h
+    - bl-interleave -h
+    - bl-pair-reads -h
+    - bl-randomize -h
+    - bl-insert-stats -h
+    - bl-pileup-stats -h
+    - bl-threshold -h
+
+about:
+  home: https://bitbucket.org/caseywdunn/biolite
+  license: GPLv3
+  summary: A lightweight bioinformatics framework with automated tracking of diagnostics and provenance.
