@@ -7,10 +7,10 @@ source:
   md5: 5940db8cba075310009fe4c55e0aeda1
 requirements:
   build:
-    - perl-threaded
+    - perl
     - zlib
   run:
-    - perl-threaded
+    - perl
     - zlib
 about:
   home: http://research-pub.gene.com/gmap/
