@@ -11,7 +11,9 @@ build:
 
 requirements:
   run:
-    - openjdk ==1.8.0.102
+    - java-jdk
+    - java-jre
+    #- openjdk ==1.8.0.102
     - unzip ==6.0
 
 package:
