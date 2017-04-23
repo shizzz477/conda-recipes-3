@@ -1,12 +1,12 @@
 #!/bin/bash
 
 bash ./configure \
-	--with-update-version=102 \
+	--with-update-version=121 \
 	--with-build-number=b13 \
 	--with-milestone=conda \
 	--with-freetype=$PREFIX \
 	--with-freetype-include=$PREFIX/include/freetype2 \
-        --disable-freetype-bundling \
+  --disable-freetype-bundling \
 	--with-zlib=system \
 	--prefix=$SRC_DIR/stage \
 	--with-extra-ldflags="-liconv"

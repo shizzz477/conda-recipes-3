@@ -1,19 +1,13 @@
-# Requires a pre-downloaded source directory:
-# cd ../
-# hg clone http://hg.openjdk.java.net/jdk8u/jdk8u
-# cd jdk8u
-# hg up jdk8u102-b14
-# sh get_source.sh
-
+# Requires a pre-downloaded source directory usign get_source.sh
 package:
   name: openjdk
-  version: 1.8.0.102
+  version: 1.8.0.121
 
 build:
   number: 13
 
 source:
-  path: ../jdk8u
+  path: /home/conda/jdk8u
 
 requirements:
   build:
