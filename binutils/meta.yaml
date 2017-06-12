@@ -16,6 +16,9 @@ requirements:
     - gcc
     - bison
     - flex
+  run:
+    - flex
+    - bison
 
 test:
   commands:
