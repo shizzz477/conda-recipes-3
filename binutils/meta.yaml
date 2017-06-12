@@ -26,8 +26,7 @@ test:
     - ar --help
     - as --help
     - c++filt --help
-    - elfedit --help
-    - gold --help
+    - elfedit --help #- gold --help
     - gprof --help
     - ld --help
     - ld.bfd --help
