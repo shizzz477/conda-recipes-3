@@ -9,9 +9,11 @@ requirements:
   build:
     - perl
     - zlib
+    - binutils >=  2.25
   run:
     - perl
     - zlib
+    - binutils >=  2.25
 about:
   home: http://research-pub.gene.com/gmap/
   license: Non-commercial
