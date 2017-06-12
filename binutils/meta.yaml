@@ -29,8 +29,7 @@ test:
     - elfedit --help #- gold --help
     - gprof --help
     - ld --help
-    - ld.bfd --help
-    - ld.gold --help
+    - ld.bfd --help #    - ld.gold --help
     - nm --help
     - objcopy --help
     - objdump --help
